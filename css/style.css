@@ -81,3 +81,5 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
     background: #f0f3f5;
 }
 #aside .map { height: 360px; min-height: 360px; padding-bottom: 0 !important; }
+
+.header-e .logo img,.logo img{width:auto!important;height:68px!important;max-width:none!important}

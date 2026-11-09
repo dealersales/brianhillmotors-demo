@@ -39,3 +39,5 @@ header[id^=header] .logo img{display:block;height:44px;width:auto}
         padding-bottom: .5rem;
     }
 }
+
+.header-e .logo img,.logo img{width:auto!important;height:68px!important;max-width:none!important}
