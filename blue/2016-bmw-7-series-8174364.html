@@ -27,9 +27,9 @@
         <!-- Bootstrap CSS -->
     <link href="assets/vendor/bootstrap.min.css?v=1793377866" rel="stylesheet">
     <!-- Critical CSS -->
-    <link href="css/critical.css?v=1794228923" rel="stylesheet">
+    <link href="css/critical.css?v=1794235017" rel="stylesheet">
     <!-- Custom Styles -->
-    <link href="css/style.css?v=1794228923" rel="stylesheet">
+    <link href="css/style.css?v=1794235017" rel="stylesheet">
     <!-- Font Awesome (core + solid + brands only) -->
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" onload="this.rel='stylesheet'">
     <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" onload="this.rel='stylesheet'">
@@ -111,8 +111,11 @@
     "vehicleTransmission": "Automatic",
     "fuelType": "Diesel",
     "color": "",
-    "bodyType": "",
-    "vehicleEngine": null,
+    "bodyType": "Saloon",
+    "vehicleEngine": {
+        "@type": "EngineSpecification",
+        "engineDisplacement": 3000
+    },
     "offers": {
         "@type": "Offer",
         "price": 14850,
@@ -378,7 +381,7 @@
                         <h2 class="fs-5 opacity-75 text-wrap mb-0">3.0 730d Saloon 4dr Diesel Auto Euro 6 (s/s) (265 ps)</h2>
                     </div>
 
-                    <ul class="list-unstyled row g-2 flex-wrap mb-0 w-100 vdp-specs"><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1 border-opacity-25 text-bg-ulez bg-opacity-10 border-ulez text-ulez"><strong class="value text-truncate"><i class="fa-solid fa-fw fa-sm fa-leaf me-1"></i>ULEZ Compliant</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2016 (16 reg)</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">74,912mi</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Automatic</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Diesel</strong></div></li></ul>
+                    <ul class="list-unstyled row g-2 flex-wrap mb-0 w-100 vdp-specs"><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1 border-opacity-25 text-bg-ulez bg-opacity-10 border-ulez text-ulez"><strong class="value text-truncate"><i class="fa-solid fa-fw fa-sm fa-leaf me-1"></i>ULEZ Compliant</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">2016 (16 reg)</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">74,912mi</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Automatic</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">3L Diesel</strong></div></li><li class="col-6 col-sm-4"><div class="spec-box text-bg-card-d border border-card-d p-2 d-flex align-items-center gap-1"><strong class="value text-truncate">Saloon</strong></div></li></ul>
                     <div class="vstack gap-2">
                         <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#vehicleEnquiryModal">Enquire now</button>
                         <a class="btn btn-primary-l" href="/sell-your-car.php?id=8174364">Part Exchange</a>
@@ -570,7 +573,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
         <ul class="ps-specs">
-        <li>ULEZ Compliant</li><li>2016 (16 reg)</li><li>74,912mi</li><li>Automatic</li><li>Diesel</li>    </ul>
+        <li>ULEZ Compliant</li><li>2016 (16 reg)</li><li>74,912mi</li><li>Automatic</li><li>Saloon</li><li>3L Diesel</li>    </ul>
     
             <div class="ps-gallery">
                 <img src="https://images.clickdealer.co.uk/vehicles/8174/8174364/large1/204587508.jpg" alt="BMW 7 Series photo 1" width="320" height="213">
@@ -624,7 +627,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                                                 <div class="is-open p-1 fw-bold px-3 rounded text-uppercase rounded-bottom-0 d-inline-block bg-opacity-100 text-bg-secondary">We are Open</div>
                                                                             </div>
                                     <div class="vstack gap-3 my-3 small">
-                                        <div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Monday - Friday</div></div><div class="col-6 times"><div class="time text-end fw-bold">09:00 am - 06:00 pm</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Saturday</div></div><div class="col-6 times"><div class="time text-end fw-bold">09:00 am - 05:00 pm</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Sunday</div></div><div class="col-6 times"><div class="time text-end fw-bold">11:00 am - 03:30 pm</div></div></div>                                        
+                                        <div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Monday - Friday</div></div><div class="col-6 times"><div class="time text-end fw-bold">9 am - 6 pm</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Saturday</div></div><div class="col-6 times"><div class="time text-end fw-bold">9 am - 5 pm</div></div></div><div class="row g-3"><div class="col-6 days"><div class="day opacity-75">Sunday</div></div><div class="col-6 times"><div class="time text-end fw-bold">11 am - 3:30 pm</div></div></div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -633,14 +636,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="divider border-bottom my-4"></div>
                     <div class="vstack gap-3">
                         <p class="small lh-lg mb-0">
-                            <span>JMC Motors Limited</span>
+                            <span>Brian Hill Motors</span>
                             <span><text class="mx-2">|</text>FCA No. 716052</span>
                             
                         </p>
                                                 <p class="small lh-lg mb-0">
                             <span>JMC Motors Limited</span><text class="mx-2">|</text>                            Registered in England &amp; Wales No. 08974082                        </p>
                                                 <p class="small lh-lg mb-0 opacity-75">
-                            JMC Motors Limited is authorised and regulated by the Financial Conduct Authority for consumer credit activities. Our firm reference number is 716052 &mdash; you can check this on the Financial Services Register at www.fca.org.uk/register. We act as a credit broker, not a lender, and introduce customers to a limited number of lenders to provide finance options including Hire Purchase (HP) and Personal Contract Purchase (PCP). We do not offer independent financial advice. We may receive a commission from the lender for introducing you to them, which may be a fixed fee or a percentage of the amount borrowed and may influence the interest rate or other terms offered to you. You will be told the amount of commission we receive before you enter into the agreement, where required. Finance is subject to status and affordability. Applicants must be aged 18 or over and a UK resident. Guarantees and indemnities may be required. Terms and conditions apply.
+                            JMC Motors Limited, trading as Brian Hill Motors, is authorised and regulated by the Financial Conduct Authority for consumer credit activities. Our firm reference number is 716052 &mdash; you can check this on the Financial Services Register at www.fca.org.uk/register. We act as a credit broker, not a lender, and introduce customers to a limited number of lenders to provide finance options including Hire Purchase (HP) and Personal Contract Purchase (PCP). We do not offer independent financial advice. We may receive a commission from the lender for introducing you to them, which may be a fixed fee or a percentage of the amount borrowed and may influence the interest rate or other terms offered to you. You will be told the amount of commission we receive before you enter into the agreement, where required. Finance is subject to status and affordability. Applicants must be aged 18 or over and a UK resident. Guarantees and indemnities may be required. Terms and conditions apply.
                         </p>
                         <p class="small lh-lg mb-0">
                             <a class="cursor-pointer link-underline-secondary link-offset-3" href="faq.html">FAQ</a>
@@ -653,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <text class="mx-2">|</text>
                             <a id="show-cookie-popup" class="cursor-pointer link-underline-secondary link-offset-3" aria-label="Open Cookie Preferences">Cookie Preferences</a>
                         </p>
-                        <p class="small lh-lg mb-0">&copy; 2026 JMC Motors Limited. All rights reserved.</p>
+                        <p class="small lh-lg mb-0">&copy; 2026 Brian Hill Motors. All rights reserved.</p>
                     </div>
                 </div>
             </div>
