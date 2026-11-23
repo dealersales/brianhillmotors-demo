@@ -97,3 +97,11 @@ iframe[class*="lazyload"] { background: #f0f3f5; }
 @media (max-width: 575.98px){ .directions{grid-template-columns:1fr !important;gap:.35rem !important;padding:.5rem .25rem !important} .directions>div{display:flex !important;align-items:center;gap:.75rem;text-align:left;width:100% !important} .directions svg{width:30px !important;flex:0 0 auto} .directions .h4{margin:0 !important;font-size:.95rem !important} .directions .fs-5{font-size:.85rem !important} }
 
 .hero-caption h1,.hero-caption p,.hero-caption .fs-5{text-shadow:0 1px 2px rgba(0,0,0,.9),0 0 14px rgba(0,0,0,.75)}
+
+/* Budget search tiles */
+.budget-tile{background:#fff;border:1px solid rgba(0,0,0,.12);box-shadow:0 1px 2px rgba(0,0,0,.05);color:inherit;transition:background-color .2s ease,border-color .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease}
+.budget-tile:hover,.budget-tile:focus-visible{background-color:var(--bs-primary,#ba2727);border-color:var(--bs-primary,#ba2727);color:#fff;transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.budget-tile:hover .budget-tile__count,.budget-tile:focus-visible .budget-tile__count{opacity:.9}
+.budget-tile__label{font-size:1.0625rem;font-weight:700;line-height:1.2}
+.budget-tile__count{font-size:.8125rem;opacity:.65;margin-top:.5rem}
+@media (min-width:768px){.budget-tile__label{font-size:1.125rem}}
